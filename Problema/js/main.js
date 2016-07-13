@@ -36,6 +36,7 @@ function actual() {
     $("#reloj").html(hora+" : "+minuto+" : "+segundo);	
 	$("#fecha").html(dias[dia]+ " , "+fecha.getDate()+ " de "+ meses[mes]);
 }
+
 //iniciar temporizador
 var husoHorario= [
 	{
@@ -48,50 +49,7 @@ var husoHorario= [
 	},
 	{
 		name:"Santiago",
-		hora: 2
-	},
-	{
-		name:"Mexico D.F",
-		hora: - 1
-	},
-	{
-		name:"Caracas",
-		hora: 1
-	},
-	{
-		name:"Brasilia",
-		hora: 2
-	},
-	{
-		name:"Quito",
-		hora: 0
-	},
-	{
-		name:"Guayaquil",
-		hora: 0
-	},
-	{
-		name:"Santa Marta",
-		hora: 1
-	},
-	{
-		name:"Bogota",
-		hora: 1
-	}
-]; 
-//iniciar temporizador
-var husoHorario= [
-	{
-		name:"Chicago",
-		hora: 0
-	},
-	{
-		name:"Sao Pablo",
-		hora: 2
-	},
-	{
-		name:"Santiago",
-		hora: 2
+		hora: -1
 	},
 	{
 		name:"Mexico D.F",
