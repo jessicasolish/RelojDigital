@@ -36,3 +36,112 @@ function actual() {
     $("#reloj").html(hora+" : "+minuto+" : "+segundo);	
 	$("#fecha").html(dias[dia]+ " , "+fecha.getDate()+ " de "+ meses[mes]);
 }
+//iniciar temporizador
+var husoHorario= [
+	{
+		name:"Chicago",
+		hora: 0
+	},
+	{
+		name:"Sao Pablo",
+		hora: 2
+	},
+	{
+		name:"Santiago",
+		hora: 2
+	},
+	{
+		name:"Mexico D.F",
+		hora: - 1
+	},
+	{
+		name:"Caracas",
+		hora: 1
+	},
+	{
+		name:"Brasilia",
+		hora: 2
+	},
+	{
+		name:"Quito",
+		hora: 0
+	},
+	{
+		name:"Guayaquil",
+		hora: 0
+	},
+	{
+		name:"Santa Marta",
+		hora: 1
+	},
+	{
+		name:"Bogota",
+		hora: 1
+	}
+]; 
+//iniciar temporizador
+var husoHorario= [
+	{
+		name:"Chicago",
+		hora: 0
+	},
+	{
+		name:"Sao Pablo",
+		hora: 2
+	},
+	{
+		name:"Santiago",
+		hora: 2
+	},
+	{
+		name:"Mexico D.F",
+		hora: - 1
+	},
+	{
+		name:"Caracas",
+		hora: 1
+	},
+	{
+		name:"Brasilia",
+		hora: 2
+	},
+	{
+		name:"Quito",
+		hora: 0
+	},
+	{
+		name:"Guayaquil",
+		hora: 0
+	},
+	{
+		name:"Santa Marta",
+		hora: 1
+	},
+	{
+		name:"Bogota",
+		hora: 1
+	}
+]; 
+
+function capitales(num) {
+	var time=new Date(); //Actualizar fecha.
+    var h=time.getHours(); //hora actual
+    var min=time.getMinutes(); //minuto actual
+    var seg=time.getSeconds(); //segundo actual
+   	if (h<10) { //dos cifras para la hora
+	    h="0"+h;
+	}
+	if (min<10) { //dos cifras para el minuto
+	    min="0"+min;
+	}
+	if (seg<10) { //dos cifras para el segundo
+	    seg="0"+seg;
+	}
+    // var day=time.getDay(); //día actual
+    // var month=time.getMonth(); //mes actual
+   	setTimeout('capitales('+num+')',1000);
+    var husoCapital= husoHorario[num].name;
+    var husoHora= husoHorario[num].hora;
+   	var sumaHora = h + parseInt(husoHora);
+    $("#time"+num).html('<p class= "nombre">'+husoCapital+'</p> <span class="hora">' + sumaHora + ' : ' +min+ ' : ' +seg+ '</span>');
+}
