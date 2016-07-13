@@ -1,0 +1,37 @@
+body {
+	background: url(../img/NIC_1186-Edit.jpg);
+	background-size: cover;
+	height: 100vh;
+	font-family: 'lato', sans-serif;
+}
+.container {
+	text-align: center;
+}
+.reloj {
+	font-size: 70px;
+	color: #fff;
+	font-weight: 700;
+	margin: 30px auto;
+}
+.checkbox {
+	text-align: left;
+}
+.fecha {
+	color: #fff;
+	font-size: 20px;
+	margin: 0 auto 30px;
+	font-weight: 700;
+}
+.nombre , .hora{
+	font-size: 30px;
+	color: white;
+	display: inline-block;
+	font-weight: 700;
+}
+.fa-arrow-right {
+	margin: 0 5px;
+	font-size: 35px;
+}
+.nombre {
+	margin-right: 50px;
+}
